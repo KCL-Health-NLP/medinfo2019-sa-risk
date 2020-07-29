@@ -278,6 +278,8 @@ def print_tfidf(tfidf_matrix, doc_number, n):
 
 class ItemSelector(BaseEstimator, TransformerMixin):
     """
+    From: https://scikit-learn.org/0.18/auto_examples/hetero_feature_union.html
+
     For data grouped by feature, select subset of data at a provided key.
 
     The data is expected to be stored in a 2D data structure, where the first
@@ -859,7 +861,9 @@ def prepare_test_data(period, feature_set, scale_data=False):
 
 
 def print_text_feature_importances(X, targets, fout):
-
+    """
+    From: https://buhrmann.github.io/tfidf-analysis.html
+    """
     def top_tfidf_feats(row, features, top_n=25):
         ''' Get top n tfidf values in row and return them with their corresponding feature names.'''
         topn_ids = np.argsort(row)[::-1][:top_n].tolist()[0]
@@ -902,6 +906,9 @@ def print_text_feature_importances(X, targets, fout):
 
 
 def plot_coefficients(classifier, model_name, feature_set, feature_names, top_features=20):
+    """
+    From: https://medium.com/@aneesha/visualising-top-features-in-linear-svm-with-scikit-learn-and-matplotlib-3454ab18a14d
+    """
     coef = classifier.coef_.ravel()
         
     top_positive_coefficients = np.argsort(coef)[-top_features:]
@@ -919,6 +926,9 @@ def plot_coefficients(classifier, model_name, feature_set, feature_names, top_fe
 
 
 def print_feature_importances(rfc, X, period, feature_set, fout):
+    """
+    Code adapted from: https://scikit-learn.org/stable/auto_examples/ensemble/plot_forest_importances.html (and elsewhere)
+    """
     print('------------------')
     print('Feature importance')
     print('------------------')
