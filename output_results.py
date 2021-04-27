@@ -10,12 +10,6 @@ This script is used to generate plots of the results obtained. Results must have
 been previously generated in the 'output' directory.
 """
 
-__author__ = "André Bittar"
-__copyright__ = "Copyright 2020, André Bittar"
-__credits__ = ["André Bittar"]
-__license__ = "GPL"
-__email__ = "andre.bittar@kcl.ac.uk"
-
 
 def plot_test_scores(path):
     d_prf = {}

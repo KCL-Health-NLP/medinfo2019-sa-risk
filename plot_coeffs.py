@@ -7,6 +7,7 @@ import pickle
 Plot the top-weighted features for classifcation.
 """
 
+
 def plot_coefficients(classifier, model_name, feature_set, feature_names, top_features=20):
     if top_features > len(feature_names):
         top_features = len(feature_names)

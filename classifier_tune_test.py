@@ -1,10 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Sep 18 10:39:13 2018
-
-@author: ABittar, andre.bittar@kcl.ac.uk
-
-This script contains code needed to run the experiments described in the 
+This script contains code needed to run the experiments described in the
 paper "Text Classification to Inform Suicide Risk Assessment in Electronic 
 Health Records", Bittar A, Velupillai S, Roberts A, Dutta R., from MedInfo 2019 
 (https://www.ncbi.nlm.nih.gov/pubmed/31437881).
@@ -68,12 +64,6 @@ from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 from sklearn.utils.extmath import density
 from zeugma import EmbeddingTransformer
-
-__author__ = "André Bittar"
-__copyright__ = "Copyright 2020, André Bittar"
-__credits__ = ["André Bittar"]
-__license__ = "GPL"
-__email__ = "andre.bittar@kcl.ac.uk"
 
 nlp = spacy.load('en_core_web_sm', disable=['tagger', 'parser', 'ner']) # remove the costly and unnecessary processing
 

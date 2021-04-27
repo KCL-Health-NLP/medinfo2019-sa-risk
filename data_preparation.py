@@ -1,10 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Sep 10 10:43:03 2018
-
-@author: ABittar
-
-Utility functions to query CRIS and prepare data for experiments described in 
+Utility functions to query CRIS and prepare data for experiments described in
 the paper "Text Classification to Inform Suicide Risk Assessment in Electronic 
 Health Records", Bittar A, Velupillai S, Roberts A, Dutta R., from MedInfo 2019 
 (https://www.ncbi.nlm.nih.gov/pubmed/31437881).

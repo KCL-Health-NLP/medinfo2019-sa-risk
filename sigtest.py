@@ -13,12 +13,6 @@ This script contains all utility function to perform significance testing
 This script must bve run after the test run of the classifier.
 """
 
-__author__ = "André Bittar"
-__copyright__ = "Copyright 2020, André Bittar"
-__credits__ = ["André Bittar"]
-__license__ = "GPL"
-__email__ = "andre.bittar@kcl.ac.uk"
-
 
 def do_all_mcnemar():
     d = {}

@@ -1,11 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Fri Nov  9 11:31:53 2018
-
-@author: ABittar
-
-Utility methods to plot words frequencies over time.
-
+Utility functions to plot words frequencies over time.
 """
 
 import matplotlib.pyplot as plt
@@ -14,6 +9,7 @@ import pandas as pd
 import re
 
 from db_connection import server_name, db_name, fetch_dataframe
+
 
 def process_cases():
     query_case = open('Z:/Andre Bittar/Projects/eHOST-IT/Andre_HES/cases_30_days_text.sql', 'r').read()
@@ -256,6 +252,7 @@ def plot_ordinal_date_mentions(df_case, df_control, terms=['overdose'], plot_typ
             fig = ax.get_figure()
             #fig.savefig(plot_path, bbox_inches='tight')
         plt.show()
+
 
 if __name__ == '__main__':
     plot_ordinal_date_mentions_separately(pop_type='case', terms=['overdose', 'suicide', 'happy'], plot_type='area')
